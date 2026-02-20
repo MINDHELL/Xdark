@@ -36,7 +36,7 @@ DELAY_SECONDS = 1800               # 1800 = 30 min, 3600 = 1 hour
 
 #--------------------------------------------
 DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://aarshhub:wcCgmKoCu2sTsEtv@cluster0.6shiu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-DB_NAME = os.environ.get("DATABASE_NAME", "Cluooto")
+DB_NAME = os.environ.get("DATABASE_NAME", "Cluosoto")
 #--------------------------------------------
 FSUB_LINK_EXPIRY = int(os.getenv("FSUB_LINK_EXPIRY", "0"))  # 0 means no expiry
 BAN_SUPPORT = os.environ.get("BAN_SUPPORT", "https://t.me/Xsupprt3bot")
