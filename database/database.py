@@ -19,7 +19,7 @@ default_verify = {
     'verified_time': 0,
     'verify_token': "",
     'link': "",
-    'token_created_at': 0   # ✅ added
+    'token_created_at': 0
 }
 
 
@@ -27,13 +27,15 @@ def new_user(id):
     return {
         '_id': id,
         'verify_status': {
-            'is_verified': False,
-            'verified_time': 0,
-            'verify_token': "",
-            'link': ""
-            'token_created_at': 0   # ✅ added
+    'is_verified': False,
+    'verified_time': 0,
+    'verify_token': "",
+    'link': "",
+    'token_created_at': 0
         }
     }
+
+
 
 class Rohit:
 
