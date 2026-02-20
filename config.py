@@ -18,19 +18,25 @@ from logging.handlers import RotatingFileHandler
 #rohit_1888 on Tg
 #--------------------------------------------
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "8154426339:")
-APP_ID = int(os.environ.get("APP_ID", "")) #Your API ID from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "") #Your API Hash from my.telegram.org
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "8220616421:AAFrc8grxPxe1fD0Q5m5tp5krMEbB2ullNQ")
+APP_ID = int(os.environ.get("APP_ID", "37371391")) #Your API ID from my.telegram.org
+API_HASH = os.environ.get("API_HASH", "37895f967d284f6781f99e9beef21ebf") #Your API Hash from my.telegram.org
 #--------------------------------------------
 
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002170811388")) #Your db channel Id
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1003806568021")) #Your db channel Id
 OWNER = os.environ.get("OWNER", "Xsupprt4bot") # Owner username without @
-OWNER_ID = int(os.environ.get("OWNER_ID", "6860316927")) # Owner id
+OWNER_ID = int(os.environ.get("OWNER_ID", "7437503888")) # Owner id
 #--------------------------------------------
 PORT = os.environ.get("PORT", "8001")
+SOURCE_CHANNEL = -1003701036114   # your source channel ID
+TARGET_CHANNEL = -1003798771315   # your target channel ID
+AUTO_POST_DELAY = 20             # 5 minutes (safe)
+TARGET2_CHANNEL = -1003553308072  # second channel
+DELAY_SECONDS = 1800               # 1800 = 30 min, 3600 = 1 hour
+
 #--------------------------------------------
-DB_URI = os.environ.get("DATABASE_URL", "")
-DB_NAME = os.environ.get("DATABASE_NAME", "Cluooo")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://aarshhub:wcCgmKoCu2sTsEtv@cluster0.6shiu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DB_NAME = os.environ.get("DATABASE_NAME", "Cluooto")
 #--------------------------------------------
 FSUB_LINK_EXPIRY = int(os.getenv("FSUB_LINK_EXPIRY", "0"))  # 0 means no expiry
 BAN_SUPPORT = os.environ.get("BAN_SUPPORT", "https://t.me/Xsupprt3bot")
@@ -40,9 +46,9 @@ START_PIC = os.environ.get("START_PIC", "https://envs.sh/Ghs.jpg")
 FORCE_PIC = os.environ.get("FORCE_PIC", "https://telegra.ph/file/e292b12890b8b4b9dcbd1.jpg")
 
 #--------------------------------------------
-SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "linkshortify.com")
-SHORTLINK_API = os.environ.get("SHORTLINK_API", "")
-VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE', 60)) # Add time in seconds
+SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "vplink.in")
+SHORTLINK_API = os.environ.get("SHORTLINK_API", "ee4c6892fd0acac564be8afb9a2db6b7ddbac61e")
+VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE', 120)) # Add time in seconds
 TUT_VID = os.environ.get("TUT_VID","https://t.me/allvidsbackup3/13")
 
 #--------------------------------------------
@@ -80,7 +86,7 @@ CMD_TXT = """<blockquote><b>» ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅs:</b></blockqu
 """
 #--------------------------------------------
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "<b>• ʙʏ @allvidsbackup3</b>") #set your Custom Caption here, Keep None for Disable Custom Caption
-PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" else False #set True if you want to prevent users from forwarding files from bot
+PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "True") == "True" else False #set True if you want to prevent users from forwarding files from bot
 #--------------------------------------------
 #Set true if you want Disable your Channel Posts Share button
 DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True'
@@ -144,4 +150,4 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
 def LOGGER(name: str) -> logging.Logger:
     return logging.getLogger(name)
-   
+
